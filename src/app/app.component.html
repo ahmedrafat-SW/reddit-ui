@@ -1,0 +1,27 @@
+<app-header></app-header>
+
+<main class="main-content">
+    <div></div>
+   
+    <div class="posts">
+   
+        <div *ngFor="let data of postsCount" class="post-card">
+            <div class="post-header">
+                <h2 class="post-title">Post Title</h2>
+                <p class="post-meta">Posted by <span class="post-author">Author</span> in <span class="post-subreddit">Subreddit</span></p>
+            </div>
+            <div class="post-content">
+                <p>Post content Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil natus voluptatibus ex reprehenderit quibusdam debitis molestiae exercitationem eos quod totam, earum iure rem. Asperiores necessitatibus aliquam quo perferendis nesciunt alias.
+                </p>
+            </div>
+            <div class="post-footer">
+                <a href="#" class="comment-link">Comments (42)</a>
+                <a href="#" class="upvote-link">Upvote</a>
+                <a href="#" class="downvote-link">Downvote</a>
+            </div>
+        </div>
+    </div>
+   
+    <div class="side-bar">
+    </div>
+</main>
