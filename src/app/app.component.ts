@@ -7,5 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'reddit';
-  postsCount: number[] = Array(10).fill(0);
 }

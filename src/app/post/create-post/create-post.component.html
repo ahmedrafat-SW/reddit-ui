@@ -1,0 +1,27 @@
+<section class="bg-white h-full border border-gray-400">
+    <div class="border border-gray-300 mx-40 my-12 ">
+        <h2 class="text-center mt-4 p-4 text-gray-700 text-2xl font-bold">Create post</h2>
+        <div class="flex flex-col items-center mt-1">
+            <form >
+                <div>
+                    <input type="text" name="title" placeholder="Title"  class="w-full border border-gray-400 rounded-md p-2 mr-8">
+                    <input type="text" name="url" placeholder="url"  class="w-full border border-gray-400 rounded-md p-2 mt-4 mr-8">
+                    <select name="subreddit" id="subreddit" placeholder="subreddit"  class="w-full text-xl font-semibold text-blue-600 border border-gray-400 rounded-md p-2 my-4 mr-8 text-center">
+                        <option value="1">r/common</option>
+                    </select>
+                </div>
+                <angular-editor 
+                formControlName="htmlContent" 
+                [config]="config"  
+                 >
+                </angular-editor>
+                <div class="mt-2 flex flex-row justify-end">
+                    <a routerLink="/"  class="m-4 border border-blue-600 bg-white text-blue-600 font-semibold rounded-lg py-2 px-14">Discard</a>
+                    <button class="m-4 border bg-blue-600  text-white font-semibold rounded-lg py-2 px-16">Post</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+

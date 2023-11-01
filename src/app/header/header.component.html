@@ -13,11 +13,23 @@
                 <span class="reddit-text">Reddit</span>
             </a>
         </div>
-        <div class="auth">          
-            <div>
-                <a routerLink="/sign-up" class="float-right sign-up mr-2">Sign up</a>
-                <a routerLink="/login" class="float-right login mr-2">Login</a>
+    <div>
+        <div *ngIf="this.isLoggedIn == true" class="float-right">
+           <button mat-button [matMenuTriggerFor]="menu">
+                    <img class="account-icon" src="https://www.redditstatic.com/avatars/avatar_default_08_D4E815.png">
+                    {{username}}
+                </button>
+                <mat-menu  #menu="matMenu" [xPosition]="'before'" class="float-right">
+                    <button  mat-menu-item (click)="goToProfile()" >Profile</button>
+                    <button  mat-menu-item (click)="logout()">Logout</button>
+                </mat-menu>
             </div>
-        </div>
+            <div *ngIf="this.isLoggedIn == false"    class="auth">          
+                <div>
+                    <a routerLink="/sign-up" class="sign-up">Sign up</a>
+                    <a routerLink="/login" class="login">Login</a>
+                </div>
+            </div>
+    </div>
     </nav>
 </header>

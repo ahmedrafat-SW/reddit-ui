@@ -1,0 +1,19 @@
+.vote-section {
+    flex: 1;
+    max-width: 50px;
+    margin: 12px;
+}
+
+.upvote{
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.downvote{
+    padding: 5px 10px;
+}
+
+.vote-count {
+    font-size: 20px;
+    font-weight: bold;
+}

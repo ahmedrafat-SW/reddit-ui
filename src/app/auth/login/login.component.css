@@ -1,0 +1,16 @@
+
+
+.success-login p{
+    background-color: green;
+    color: white;
+    font-weight: 700;
+}
+
+.toast-success {
+  background-color: #4CAF50; /* Change the background color to green */
+  color: white; /* Change the text color to white */
+}
+
+.toast-success .toast-progress {
+  background-color: #317933; /* Change the progress bar color */
+}
