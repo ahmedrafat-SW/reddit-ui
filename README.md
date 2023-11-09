@@ -7,10 +7,10 @@
 ![Screenshot from 2023-11-09 15-15-28](https://github.com/ahmedrafat-SW/reddit-ui/assets/129176607/2925ab41-2ce7-4316-89d2-c630984a231e)
 
 ## Create Subreddit
-![Screenshot from 2023-11-09 15-17-03](https://github.com/ahmedrafat-SW/reddit-ui/assets/129176607/3cd1be25-6cd2-4635-8922-6a25f72515db)
+![Screenshot from 2023-11-09 15-47-13](https://github.com/ahmedrafat-SW/reddit-ui/assets/129176607/a1cd6d98-f026-44ea-a32f-743a5463ca75)
 
 ## Sign Up 
-![Screenshot from 2023-11-09 15-18-58](https://github.com/ahmedrafat-SW/reddit-ui/assets/129176607/2a483190-6dfc-41f2-8e2d-30bdf3c5b8b1)
+![Screenshot from 2023-11-09 15-43-53](https://github.com/ahmedrafat-SW/reddit-ui/assets/129176607/6016a5d1-4055-43e7-9a15-2e073e466d43)
 
 ## Login
-![Screenshot from 2023-11-09 15-18-41](https://github.com/ahmedrafat-SW/reddit-ui/assets/129176607/7cec24df-426f-40e1-b0fe-21d0a35bd540)
+![Screenshot from 2023-11-09 15-18-41](https://github.com/ahmedrafat-SW/reddit-ui/assets/129176607/0aeb5d84-d246-45d7-aa14-2bc98f8aff0e)
