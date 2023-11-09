@@ -1,1 +1,1 @@
-# reddit-ui
+# AngularReddit
