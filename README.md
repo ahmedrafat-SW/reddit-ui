@@ -1,7 +1,7 @@
 # AngularReddit
 
 ## Home Page
-![Screenshot from 2023-11-09 14-47-22](https://github.com/ahmedrafat-SW/reddit-ui/assets/129176607/9e35b17f-35a7-4e6b-a14a-6bbc91425bb5)
+![Screenshot from 2023-11-10 01-20-11](https://github.com/ahmedrafat-SW/reddit-ui/assets/129176607/65bed692-4f21-4c31-8a72-fa73297e4709)
 
 ## Create Post
 ![Screenshot from 2023-11-09 15-15-28](https://github.com/ahmedrafat-SW/reddit-ui/assets/129176607/2925ab41-2ce7-4316-89d2-c630984a231e)
