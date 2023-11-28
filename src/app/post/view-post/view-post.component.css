@@ -2,7 +2,7 @@
 .post {
     margin-bottom: 10px;
     padding: 12px;
-    border: 1px solid #ffe5e5;
+    border: 1px solid #dedddd;
     border-radius: 4px;
     display: flex;
     flex-direction: row;
@@ -21,7 +21,7 @@
     color: #787C7E;
  }
 
-.username {
+.username, .reddit{
     color: black;
     font-weight: bold;
     font-size: 14px;
@@ -57,7 +57,7 @@
     padding: 12px;
 }
 
-.post-content-section h3 {
+.post-content-section a {
     text-align: left;
     font-size: 20px;
     font-weight: bold;
@@ -67,4 +67,34 @@
 .post-content-section p {
     text-align: left;
     padding: 4px 5px;
+}
+
+.post-name:hover {
+    cursor: pointer;
+    color: #0073d3;
+}
+
+@media screen and (max-width: 484px){
+    .header-info{
+        font-size: 12px;
+    }
+
+    #uname{
+        display: none;
+    }
+
+    #post-text{
+        display: none;
+    }
+
+    .user-icon{
+        min-height: 30px;
+        min-width: 30px;
+    }
+
+    .post{
+        padding: 2px;
+    }
+
+
 }

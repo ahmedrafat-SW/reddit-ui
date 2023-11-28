@@ -7,16 +7,23 @@
         <div class="side-bar-content">
             <div>
                 <div id="reddit-icon" class="flex flex-row justify-start"></div>
-                <h3 class="inline mx-4 font-bold text-center">Home</h3>
+                <h3 class="inline mx-4 font-bold text-center" id="home-text">Home</h3>
                 <p class="mx-6 text-sm">Your personal Reddit frontpage. Come here to check in with your favorite communities.</p>
             </div>
             <div class="create-section">
                 <a routerLink="/post-create" class="create-btn">Create Post <span class="material-icons">post_add</span></a>
                 <a routerLink="/subreddit-create" id="subreddit"  class="create-btn">Create Subreddit <span class="material-icons" style="font-size: 25px; background-clip: text; color:rgb(0, 150, 211);">create</span></a>
             </div>
+
         </div>
         <div class="view-subreddit">
             <app-view-subreddit></app-view-subreddit>
+        </div>
+        <div class="back-section">
+            <a class="back-btn" href="#" *ngIf="this.showBackBtn">
+                Back to Top
+                <span class="material-icons" style="font-size: 30px; color: rgb(255, 255, 255);">keyboard_arrow_up</span> 
+            </a>
         </div>
     </div>
 </div>

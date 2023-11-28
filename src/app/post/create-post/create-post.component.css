@@ -1,1 +1,44 @@
 
+.create-post-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100%;
+    padding: 20px 24px;
+    gap: 24px;
+}
+
+.sidebar{
+    min-width: 320px;
+    padding: 0px 5px;
+}
+
+#discard-btn {
+    color: #0079d3;
+    border: 1px solid #0079d3;
+}
+
+#post-btn {
+    color: #fff;
+    background-color: #0079d3;
+}
+
+#discard-btn:hover, #post-btn:hover {
+    opacity: .7;
+}
+
+#title:hover, #url:hover, #subreddit:hover{
+    border: 1px solid #0079d3;
+    outline: none;
+}
+
+#title:focus, #url:focus, #subreddit:focus{
+    border: 1px solid #0079d3;
+    outline: none;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    display: inline;
+}

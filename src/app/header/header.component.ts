@@ -11,20 +11,21 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit{
 
+  isMenuOpen: boolean = false;
   isLoggedIn: boolean = false;
   username: string = '';
 
   constructor(private authService: AuthService, private router: Router){}
 
   ngOnInit(): void {
-    this.authService.LoggedIn.subscribe((data: boolean)=> this.isLoggedIn = data);
+    this.authService.LoggedIn.subscribe((data: boolean)=> this.isLoggedIn = true);
     this.authService.username.subscribe((data: string)=> this.username = data);
     this.isLoggedIn = this.authService.isLoggedIn();
     this.username = this.authService.getUsername();
   }
 
   goToProfile(): void{
-    this.router.navigateByUrl(`/user-profile/ ${this.username}`);
+    this.router.navigateByUrl(`/user-profile`);
   }
 
   logout(): void{
@@ -32,5 +33,17 @@ export class HeaderComponent implements OnInit{
     this.authService.logout();
     this.router.navigateByUrl('');
   }
+
+  viewMenu():void{
+    this.isMenuOpen = true;
+  }
+  hideMenu(): void{
+    this.isMenuOpen = false;
+    console.log("hide menu invoked");
+    
+  }
+  
+  
+
 
 }

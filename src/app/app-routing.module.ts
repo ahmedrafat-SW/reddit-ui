@@ -9,6 +9,7 @@ import { ViewSubredditComponent } from './subreddit/view-subreddit/view-subreddi
 import { ViewPostComponent } from './post/view-post/view-post.component';
 import { SubredditDetailsComponent } from './subreddit/subreddit-details/subreddit-details.component';
 import { ProfileComponent } from './auth/user/profile/profile.component';
+import { PostDetailsComponent } from './post/post-details/post-details.component';
 
 const routes: Routes = [
   {
@@ -54,6 +55,11 @@ const routes: Routes = [
   {
     path: "post-view",
     component: ViewPostComponent,
+    title: "Post"
+  },
+  {
+    path: "post-details/:id",
+    component: PostDetailsComponent,
     title: "Post"
   }
 ];

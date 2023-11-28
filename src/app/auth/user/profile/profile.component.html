@@ -9,13 +9,14 @@
     <div class="content">
         <app-view-post *ngIf="isPostViewed" [posts]="posts"></app-view-post>
         <app-subreddit-details *ngIf="isSubredditViewed"></app-subreddit-details>
-        <app-view-comment *ngIf="isCommentViewed"></app-view-comment>
+        <app-commnet *ngIf="isCommentViewed"></app-commnet>
     </div>
 
 
     <div class="side-bar">
-         <div class="top-img"></div>
-            <img src="https://i.redd.it/snoovatar/avatars/5b2c3733-008c-49cc-a002-d795d2d10a1a.png" alt="">
+         <div class="top-img">
+             <img src="https://i.redd.it/snoovatar/avatars/5b2c3733-008c-49cc-a002-d795d2d10a1a.png" alt="avatar">
+         </div>
         <div class="side-bar-content">
             <div>
                 <div id="reddit-icon" class="flex flex-row justify-center text-center mb-20"></div>

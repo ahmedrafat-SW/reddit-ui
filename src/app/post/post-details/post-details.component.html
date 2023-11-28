@@ -1,1 +1,36 @@
-<p>post-details works!</p>
+<div class="main-container">
+  <div class="container mx-auto px-16 mt-6" id="post-section">
+      <div class="bg-white  py-4 px-6 rounded-lg shadow-md">
+          <app-view-post [posts]="posts"></app-view-post>
+        <!-- Create Comment Section -->
+        <div class="mt-8 flex flex-col">
+          <h2 class="text-xl font-bold mb-2">Add a Comment</h2>
+          <textarea
+            class="w-full p-2 rounded border border-gray-300 focus:outline-none focus:ring focus:border-blue-300 hover:border-blue-400"
+            placeholder="Your comment..."
+          ></textarea>
+          <button class="mt-4 bg-blue-500 text-white font-semibold px-4 py-2 rounded-md  hover:opacity-80 self-end">
+            Post Comment
+          </button>
+        </div>
+        <app-commnet [commentList]="comments" ></app-commnet>
+      </div>
+    </div>
+    <div class="side-bar">
+           <div class="top-img">
+               <img src="https://i.redd.it/snoovatar/avatars/5b2c3733-008c-49cc-a002-d795d2d10a1a.png" alt="avatar">
+           </div>
+          <div class="side-bar-content">
+              <div>
+                  <div id="reddit-icon" class="flex flex-row justify-center text-center mb-20"></div>
+                  <h3 class="inline mx-4 font-bold text-center items-center text-2xl">User</h3>
+                  <p class="mx-6 text-sm">Your personal Reddit frontpage. Come here to check in with your favorite communities.</p>
+              </div>
+              <div class="create-section">
+                  <a routerLink="/post-create" class="create-btn">Create Post <span class="material-icons">post_add</span></a>
+                  <a routerLink="/subreddit-create" id="subreddit"  class="create-btn">Create Subreddit <span class="material-icons" style="font-size: 25px; background-clip: text; color:rgb(0, 150, 211);">create</span></a>
+              </div>
+          </div>
+      </div>
+</div>
+  

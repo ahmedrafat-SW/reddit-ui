@@ -9,7 +9,6 @@ import { PostModel } from 'src/app/post.model';
 export class ViewPostComponent {
 
   @Input() posts: PostModel[] = [];
-
   constructor(){}
 
 

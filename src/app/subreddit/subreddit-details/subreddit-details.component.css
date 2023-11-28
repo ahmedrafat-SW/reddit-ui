@@ -1,0 +1,12 @@
+
+.info {
+    font-weight: 500;
+    color: #585656;
+    margin: 0px 5px;
+}
+
+.info:hover {
+    color: #000;
+    text-decoration: underline;
+    cursor: pointer;
+}

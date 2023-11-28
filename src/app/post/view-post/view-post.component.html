@@ -5,20 +5,20 @@
         <div class="post-header">
             <span class="username">
                 <span class="user-icon">
-                    <img src="https://i.redd.it/snoovatar/avatars/5b2c3733-008c-49cc-a002-d795d2d10a1a.png" alt="avatar">
+                    <img class="icon" src="https://i.redd.it/snoovatar/avatars/5b2c3733-008c-49cc-a002-d795d2d10a1a.png" alt="avatar">
                 </span>
-                <a routerLink="/user-profile">{{post.username}} . </a>
+                <a routerLink="/user-profile" id="uname">{{post.username}} . </a>
             </span>
             <div class="header-info">
-                <span>Posted on/</span>
-                <span class="username"><a routerLink="/user-profile">{{post.subredditName}}</a></span>
+                <span id="post-text">Posted on/</span>
+                <span class="reddit"><a routerLink="/view-subreddit">{{post.subredditName}}</a></span>
                 <span>{{post.duration}}</span>
             </div>
         </div>
         <div class="post-content-section">
-            <h3>{{post.postName}}</h3>
+            <a class="post-name" [routerLink]="['/post-details', post.id]">{{post.postName}}</a>
             <p>{{post.description}}</p>
         </div>
-       <app-view-comment></app-view-comment>
+        <app-interact [postId]="post.id"></app-interact>
     </div>
 </div>

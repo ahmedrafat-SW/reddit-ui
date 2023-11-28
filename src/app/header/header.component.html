@@ -12,22 +12,52 @@
                 </svg>
                 <span class="reddit-text">Reddit</span>
             </a>
+
+            <a class="home-icon" routerLink="/">
+                 <span class="material-icons">home</span> 
+                 <span class="home-text"> Home</span>
+            </a>
+            <div class="flex flex-row m-0 p-0">
+                <div class="search-area" *ngIf="isLoggedIn">
+                    <input class="search" type="text" id="search" placeholder="Search Reddit">
+                    <a class="search-btn" href="#search">
+                        <span class="material-icons" style="color: rgb(255, 255, 255); font-size: 29px;">search</span>
+                        Search
+                    </a>
+                </div>
+                <div class="add-post" *ngIf="isLoggedIn">
+                    <a class="flex flex-row ml-4"   id="add-icon" routerLink="/post-create">
+                         <span class="material-icons"  style="color: rgb(13, 13, 13); font-size: 35px;">add</span> 
+                    </a>
+                </div>
+            </div>
         </div>
     <div>
-        <div *ngIf="this.isLoggedIn == true" class="float-right">
-           <button mat-button [matMenuTriggerFor]="menu">
-                    <img class="account-icon" src="https://www.redditstatic.com/avatars/avatar_default_08_D4E815.png">
+        <div 
+            *ngIf="this.isLoggedIn" 
+            class="account"
+             appClickedOutside 
+            (clickedOutside)="hideMenu()"
+            >
+           <button class="name" (click)="viewMenu()">
+                <img class="account-icon" src="https://styles.redditmedia.com/t5_27tifo/styles/profileIcon_snoo5b2c3733-008c-49cc-a002-d795d2d10a1a-headshot.png?width=256&height=256&crop=256:256,smart&s=bc65d233d550a78cc963b44dc1997fbf8ac47cfb">
+                <span class="username">
                     {{username}}
-                </button>
-                <mat-menu  #menu="matMenu" [xPosition]="'before'" class="float-right">
-                    <button  mat-menu-item (click)="goToProfile()" >Profile</button>
-                    <button  mat-menu-item (click)="logout()">Logout</button>
-                </mat-menu>
+                </span>
+                <span class="material-icons">keyboard_arrow_down</span> 
+
+            </button>
+            <div class="menu" 
+            *ngIf="isMenuOpen" 
+            >
+                <button  class="dropdown-item" (click)="goToProfile()" ><span class='material-icons' style="color: rgb(128, 128, 128);">person</span><span class="space"></span> Profile</button>
+                <button  class="dropdown-item" (click)="logout()">  <span class="material-icons" style="color: rgb(128, 128, 128);">logout</span> <span class="space"></span> Logout</button>
+            </div>
             </div>
             <div *ngIf="this.isLoggedIn == false"    class="auth">          
                 <div>
-                    <a routerLink="/sign-up" class="sign-up">Sign up</a>
                     <a routerLink="/login" class="login">Login</a>
+                    <a routerLink="/sign-up" class="sign-up">Sign up</a>
                 </div>
             </div>
     </div>

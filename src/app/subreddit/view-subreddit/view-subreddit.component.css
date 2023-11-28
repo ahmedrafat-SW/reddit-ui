@@ -1,0 +1,16 @@
+
+.item {
+    color: rgb(128, 128, 128);
+}
+
+.item:hover, .item:active{
+    color: #000;
+}
+
+#view-all {
+    color: #0074d3;
+}
+
+#view-all:hover, #view-all:focus, #view-all:active {
+    opacity: .8;
+}

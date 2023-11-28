@@ -1,0 +1,29 @@
+ <div class="mt-8">
+        <h2 class="text-xl font-bold mb-2">Comments</h2>
+        <div *ngFor="let comment of commentList" class="bg-gray-100 p-4 rounded-lg mb-4">
+          <div class="flex flex-row gap-2  ">
+              <span class="material-icons" style="color: #0076d3; font-size: xx-large; margin-right: 5px;">account_circle</span>
+              <div class="text-gray-600 mt-1 font-semibold">
+                <span class="hover:text-black hover:cursor-pointer hover:underline">
+                  {{ comment.username }} 
+                </span>
+                  <span class="hover:cursor-pointer">1 point .</span>
+              </div>
+              <span class="mt-1 text-gray-600">{{comment.createdDate}}</span>
+          </div>
+          <p class="ml-11">{{ comment.text }}</p>
+          <div class="flex flex-row gap-10 ml-14 mt-2">
+            <a [routerLink]="['/post-details/', comment.postId]">
+                <span class="text-sm text-gray-500 font-semibold hover:text-black hover:underline">reply</span>
+            </a>
+            <button  [matMenuTriggerFor]="menu">
+                <span class="material-icons" style="color: rgb(128, 128, 128); font-size: 31px; ">more_horiz</span>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before" yPosition="above">
+                <button mat-menu-item class="bg-white">Save</button>
+                <button mat-menu-item>Edit</button>
+                <button mat-menu-item>Delete</button>
+            </mat-menu>
+            </div>
+        </div>
+      </div>

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import { CommentService } from 'src/app/interact/comment.service';
 import { PostModel } from 'src/app/post.model';
+import { PostService } from 'src/app/post/post.service';
 
 @Component({
   selector: 'app-profile',
@@ -7,7 +9,13 @@ import { PostModel } from 'src/app/post.model';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent {
+ 
+  isPostViewed: boolean = true;
+  isSubredditViewed: boolean = false;
+  isCommentViewed: boolean = false;
   
+  constructor(private postService: PostService, private commentService: CommentService){}
+
   posts: Array<PostModel> = [
     {
       id: 1,
@@ -23,11 +31,12 @@ export class ProfileComponent {
       upVote: false
     }
   ]
+
   
-  isPostViewed: boolean = false;
-  isSubredditViewed: boolean = false;
-  isCommentViewed: boolean = false;
-  constructor(){}
+
+
+  
+
   
   displayPosts():void {
     this.isPostViewed = true;

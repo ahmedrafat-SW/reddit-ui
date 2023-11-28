@@ -1,0 +1,28 @@
+
+#discard-btn {
+    color: #0079d3;
+    border: 1px solid #0079d3;
+}
+
+#post-btn {
+    color: #fff;
+    background-color: #0079d3;
+}
+
+#discard-btn:hover, #post-btn:hover {
+    opacity: .7;
+}
+
+#title, #subreddit{
+    padding: 10px 20px;
+}
+
+#title:hover, #subreddit:hover{
+    border: 1px solid #0079d3;
+    outline: none;
+}
+
+#title:focus, #subreddit:focus{
+    border: 1px solid #0079d3;
+    outline: none;
+}

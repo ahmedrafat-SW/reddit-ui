@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'reddit';
+
+ docCliked(): void {
+    document.body.addEventListener("click",function(event){
+      console.log(event.target)
+      alert(event.target)
+    })
+ }
 }

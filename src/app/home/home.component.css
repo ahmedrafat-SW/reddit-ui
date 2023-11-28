@@ -1,23 +1,27 @@
 .home {
-    margin-top: 100px;
-    margin-left: 10%;
-    margin-right: 10%;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 40px;
-    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 24px;
+    max-width: 100%;
 }
 
 .posts{
+    flex: 6;
     height: 100%;
-    padding: 0px 20px;
+    max-width: 100%;
     text-align: center;
     align-items: center;
 }
 
 .side-bar{
-    height: 60%;
-    width: 312px;
+    flex: 1;
+    margin-right: 0px;
+    margin-left: 24px;
+    height: 100%;
+    min-width: 312px;
+    display: flex;
+    flex-direction: column;
 }
 
 .top-img {
@@ -78,8 +82,74 @@
     justify-content: center;
 }
 
+.create-btn:hover {
+    opacity: .9;
+}
+
 #subreddit {
     background-color: white;
     color: #0079d3;
     border: 1px solid #0079d3;
+
+}
+
+.back-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.back-btn {
+    background-color: #0079d3;
+    border-radius: 30px;
+    padding: 5px 10px;
+    margin: 20px 40px;
+    color: white;
+    position: fixed;
+    bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.back-btn:hover{
+    opacity: .8;
+}
+
+@media screen and (max-width: 1076px){
+    .side-bar{
+        visibility: hidden;
+        overflow: hidden;
+        font-size: 14px;
+    }
+    .home{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .home{
+        padding: 20px 0px;
+        margin-right: 0;
+        padding-right: 0px;
+    }
+    .side-bar{
+        margin-right: 24px;
+    }
+    
+}
+
+@media screen and (min-width: 1500px){
+    .posts{
+        padding-left: 10%;
+    }
+    .side-bar{
+        margin-right: 10%;
+    }
+}
+
+@media screen and (max-width: 490px){
+    .home{
+        padding: 20px 1px;
+    }
 }

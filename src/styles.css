@@ -15,7 +15,5 @@ body{
   background-color: #dae0e6;
 }
 
-input.ng-invalid.ng-touched {
-  border: 1px solid red;
-}
+
 

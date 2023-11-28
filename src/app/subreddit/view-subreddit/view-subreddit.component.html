@@ -1,9 +1,12 @@
 <div class="ml-8">
     <h3 class="text-xl font-semibold">Browse Subreddits</h3>
     <ul class="mt-1" *ngFor="let subreddit of subreddits">
-        <li class="text-blue-600 text-lg ">
-            <a routerLink="/subreddit-details">{{subreddit.name}}</a>
+        <li class="item" >
+            <a routerLink="/subreddit-details">
+                <i class='fa fa-newspaper-o'></i>
+                {{subreddit.name}}
+            </a>
         </li>
     </ul>
-    <a  routerLink="/subreddit-details" class="mt-2 text-center block font-bold">... View All</a>
+    <a  routerLink="/subreddit-details" id="view-all"  class="mt-2 text-center block font-bold">... View All</a>
 </div>
