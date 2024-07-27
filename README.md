@@ -53,3 +53,12 @@ The repository contains the following main components:
 1. **Clone the repository**:
    ```sh
    git clone https://github.com/ahmedrafat-SW/reddit-ui.git
+2. **Navigate to the project directory**:
+   ```sh
+   cd reddit-ui
+3. **Install the dependencies:**:
+   ```sh
+   npm install
+4. **Start the development server**:
+   ```sh
+   ng serve
