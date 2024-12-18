@@ -3,6 +3,7 @@
 ## About
 
 Reddit Front-end using the Angular framework.
+backend repo: https://github.com/ahmedrafat-SW/spring-reddit-api
 
 ## Structure
 
